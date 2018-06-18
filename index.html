@@ -8,7 +8,7 @@ title: Flannel
   <div class="goto-q">
     <form>
       <input type="text" placeholder="Codeforces Problem Code (eg. 736B)">
-      <button onclick="goto-prblink(document.getElementById('a').value)">Go</button>
+      <button onclick="gotoprblink(document.getElementById('a').value)">Go</button>
   </div>
   <ul class="posts">
     {% for post in site.solutions %}
@@ -17,7 +17,7 @@ title: Flannel
   </ul>
 </div>
 <script>
-  function goto-prblink(a) {
+  function gotoprblink(a) {
     var slen = a.length;
     var qid = a.charAt(a.length - 1);
     var linkto = 'codeforces/problemset/problem/' + a.substring(0, a.length - 2) + '/' + a.charAt(a.length - 1);
