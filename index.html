@@ -5,9 +5,21 @@ title: Flannel
 
 <div id="home">
   <p>Flannel contains solutions with explanations to selected solved problems. </p>
+  <div class="goto-q">
+    <form>
+      <input type="text" placeholder="Codeforces Problem Code (eg. 736B)">
+      <button onclick="goto-prblink(document.getElementById('a').value)">Go</button>
+  </div>
   <ul class="posts">
     {% for post in site.solutions %}
       <li><a href="{{ solutions.url }}">{{ solutions.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
+<script>
+  function goto-prblink(a) {
+    var slen = a.length;
+    var qid = a.charAt(a.length - 1);
+    var linkto = 'codeforces/problemset/problem/' + a.substring(0, a.length - 2) + '/' + a.charAt(a.length - 1);
+    window.location.href = linkto;
+</script>
