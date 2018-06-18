@@ -6,10 +6,8 @@ title: Flannel
 <div id="home">
   <p>Flannel contains solutions with explanations to selected solved problems. </p>
   <div class="goto-q">
-    <form>
-      <input type="text" placeholder="Codeforces Problem Code (eg. 736B)" id="pcode">
-      <button onclick="gotoprblink(document.getElementById('pcode').value)">Go</button>
-    </form>
+    <input type="text" placeholder="Codeforces Problem Code (eg. 736B)" id="pcode">
+    <button onclick="gotoprblink(document.getElementById('pcode').value)">Go</button>
   </div>
   <ul class="posts">
     {% for post in site.solutions %}
@@ -25,6 +23,6 @@ title: Flannel
     var qid = a.charAt(a.length - 1);
     var linkto = 'codeforces/problemset/problem/' + a.substring(0, a.length - 2) + '/' + a.charAt(a.length - 1);
     console.log(linkto);
-    //window.location = linkto;
+    window.location = linkto;
   }
 </script>
