@@ -25,4 +25,10 @@ title: Flannel
     console.log(linkto);
     window.location = linkto;
   }
+  var pcodein = document.getElementById('pcode');
+  pcodein.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {
+        gotoprblink(document.getElementById('pcode').value)
+    }
+  });
 </script>
