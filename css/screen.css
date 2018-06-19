@@ -161,14 +161,19 @@ ul.posts {
 
 #pcode {
   border: none;
-  width: 90%;
+  width: 85%;
   height: 50px;
 }
 
 #pclick {
   border: none;
   height: 50px;
-  width: 8%;
+  width: 12%;
+}
+
+#pcode,
+#pclick {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*****************************************************************************/
