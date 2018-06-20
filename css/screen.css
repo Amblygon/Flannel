@@ -161,12 +161,24 @@ ul.posts {
 
 #pcode {
   border: none;
-  width: 100%;
+  width: 80%;
   height: 50px;
+  padding: 10px;
 }
 
 #pcode {
   font-family: 'Source Sans Pro', sans-serif;
+  width: 20%;
+  background-color: none;
+}
+
+#pcode,
+#pclick {
+  box-sizing: border-box;
+}
+
+.goto-q {
+  border: 1px solid black;
 }
 
 /*****************************************************************************/
