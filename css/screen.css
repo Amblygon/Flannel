@@ -176,6 +176,7 @@ ul.posts {
 #pclick {
   background-color: white;
   width: 20%;
+  max-width: 150px;
   border: none;
   text-align: center;
   text-decoration: none;
