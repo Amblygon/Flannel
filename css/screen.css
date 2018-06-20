@@ -159,6 +159,13 @@ ul.posts {
 
 /*****************************************************************************/
 
+
+#pcode,
+#pclick {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
 #pcode {
   border: none;
   width: 80%;
@@ -167,15 +174,13 @@ ul.posts {
 }
 
 #pclick {
-  width: 20%;
-  height: 50px;
-  background-color: none;
-}
-
-#pcode,
-#pclick {
-  font-family: 'Source Sans Pro', sans-serif;
-  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .goto-q {
