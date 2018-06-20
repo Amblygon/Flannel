@@ -166,14 +166,15 @@ ul.posts {
   padding: 10px;
 }
 
-#pcode {
-  font-family: 'Source Sans Pro', sans-serif;
+#pclick {
   width: 20%;
+  height: 50px;
   background-color: none;
 }
 
 #pcode,
 #pclick {
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
 }
 
