@@ -67,6 +67,10 @@ table {
 /*
 /*****************************************************************************/
 
+.small-text {
+  font-size: 0.5em;
+  padding-top: 10px;
+
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
