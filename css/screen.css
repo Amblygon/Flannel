@@ -117,6 +117,7 @@ ul.posts {
 .small-text {
   font-size: 0.8em;
   padding-top: 10px;
+  display: none;
 }
 
   .site .title a {
