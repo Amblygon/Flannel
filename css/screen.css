@@ -272,8 +272,9 @@ ul.posts {
 /*****************************************************************************/
 
 .tag-boxed {
-  background color: black;
+  background-color: black;
   padding: 5px;
   margin: 2px;
   color: white;
+  font-size: 0.7em;
 }
