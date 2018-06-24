@@ -11,16 +11,10 @@ title: Flannel
   </div>
   <span class="small-text"><em>New editorials added daily. </em></span>
   <ul class="posts">
-    {% for post in site.solutions %}
-      <li><a href="">{{ page.title }}</a></li>
+    {% for page in site.solutions %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
    </ul>
-    {% for page in site.solutions %}
-      <article>
-        <h2>{{ page.title }}</h2>
-        <p>{{ page.content | markdownify }}</p>
-      </article>
-    {% endfor %}
    </div>
 <script>
   function gotoprblink(a) {
