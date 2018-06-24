@@ -301,9 +301,3 @@ ul.posts {
     columns: 2;
   }
 }
-
-@media screen and (min-width: 1080px) {
-  .front-listing-sect ul {
-    columns: 3;
-  }
-}
