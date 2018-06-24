@@ -10,11 +10,6 @@ title: Flannel
     <button onclick="gotoprblink(document.getElementById('pcode').value)" id="pclick">Go</button>
   </div>
   <span>We are adding new editorials daily. Please find our current editorial listing below.</span>
-  <ul class="posts">
-    {% for page in site.solutions %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-   </ul>
   
   {% assign categories_array = "" | split:"|" %}
   {% for page in site.solutions %}
