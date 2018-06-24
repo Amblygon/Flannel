@@ -14,7 +14,13 @@ title: Flannel
     {% for post in site.solutions %}
       <li><a href="{{ solutions.url }}">{{ solutions.title }}</a></li>
     {% endfor %}
-  </ul>
+    </ul>
+    {% for page in site.solutions %}
+      <article>
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.content | markdownify }}</p>
+      </article>
+    {% endfor %}
 </div>
 <script>
   function gotoprblink(a) {
