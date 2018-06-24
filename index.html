@@ -26,9 +26,9 @@ title: Flannel
     {{ cat }}
     <ul>
     {% for page in site.solutions %}
-      
+      {% if page.categories == cat %}
         <li><a href="{{ page.url }}">{{ page.title }}</a> {{ page.categories }}</li>
-      
+      {% endif}
     {% endfor %}
     </ul>
   {% endfor %}
