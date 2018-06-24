@@ -282,3 +282,23 @@ ul.posts {
   color: white;
   font-size: 0.8em;
 }
+
+/*****************************************************************************/
+/*
+/* Front-page listing
+/*
+/*****************************************************************************/
+
+.front-listing {
+  display: flexbox;
+}
+
+.front-listing-sect {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .front-listing-sect {
+    flex-basis: 50%;
+  }
+}
