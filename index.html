@@ -24,6 +24,13 @@ title: Flannel
   {% endfor %}
   {% for categories in categories_array %}
     {{ categories }}
+    <ul>
+    {% for page in site.solutions %}
+      {% if page.categories == categories %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
   {% endfor %}
   
   </div>
