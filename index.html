@@ -22,13 +22,13 @@ title: Flannel
           {% assign categories_array = categories_array | push: categories | uniq %}
       {% endfor %}
   {% endfor %}
-  {% for categories in categories_array %}
+  {% for cat in categories_array %}
     {{ categories }}
     <ul>
     {% for page in site.solutions %}
-      {% if page.categories == categories %}
+      
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
+      
     {% endfor %}
     </ul>
   {% endfor %}
