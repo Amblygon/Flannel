@@ -290,15 +290,20 @@ ul.posts {
 /*****************************************************************************/
 
 .front-listing {
-  display: flex;
 }
 
-.front-listing-sect {
-  flex-basis: 100%;
+.front-listing-sect ul {
+  list-style: none;
 }
 
 @media screen and (min-width: 480px) {
-  .front-listing-sect {
-    flex-basis: 50%;
+  .front-listing-sect ul {
+    columns: 2;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .front-listing-sect ul {
+    columns: 3;
   }
 }
