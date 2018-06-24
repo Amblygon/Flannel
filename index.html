@@ -17,18 +17,20 @@ title: Flannel
           {% assign categories_array = categories_array | push: categories | uniq %}
       {% endfor %}
   {% endfor %}
-  {% for cat in categories_array %}
-  <div class="front-listing-sect">
-  <span class="front-listing-title">{{ cat }}</span>
-    <ul class="posts">
-    {% for page in site.solutions %}
-      {% if page.categories contains cat %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
+  <div class="front-listing">
+    {% for cat in categories_array %}
+    <div class="front-listing-sect">
+    <span class="front-listing-title">{{ cat }}</span>
+      <ul class="posts">
+      {% for page in site.solutions %}
+        {% if page.categories contains cat %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
     {% endfor %}
-    </ul>
   </div>
-  {% endfor %}
   
   </div>
 
