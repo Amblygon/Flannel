@@ -9,12 +9,15 @@ title: Flannel
     <input type="text" placeholder="Codeforces Problem Code (eg.736B)." id="pcode">
     <button onclick="gotoprblink(document.getElementById('pcode').value)" id="pclick">Go</button>
   </div>
-  <span class="small-text"><em>New editorials added daily. </em></span>
+  <span>We are adding new editorials daily. Please find our current editorial listing below.</span>
   <ul class="posts">
     {% for page in site.solutions %}
       <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
    </ul>
+   {% for page in site.solutions %}
+      <a href="">{{ page.categories }}</a></li>
+   {% endfor %}
    </div>
 <script>
   function gotoprblink(a) {
