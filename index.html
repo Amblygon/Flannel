@@ -21,7 +21,7 @@ title: Flannel
     {% for cat in categories_array %}
     <div class="front-listing-sect">
     <span class="front-listing-title">{{ cat }}</span>
-      <ul class="posts">
+      <ul>
       {% for page in site.solutions %}
         {% if page.categories contains cat %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
