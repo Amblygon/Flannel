@@ -23,14 +23,16 @@ title: Flannel
       {% endfor %}
   {% endfor %}
   {% for cat in categories_array %}
-    {{ cat }}
-    <ul>
+  <div class="front-listing-sect">
+  <span class="front-listing-title">{{ cat }}</span>
+    <ul class="posts">
     {% for page in site.solutions %}
       {% if page.categories contains cat %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a> {{ page.categories }}</li>
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
+  </div>
   {% endfor %}
   
   </div>
