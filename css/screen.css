@@ -290,7 +290,7 @@ ul.posts {
 /*****************************************************************************/
 
 .front-listing {
-  display: flexbox;
+  display: flex;
 }
 
 .front-listing-sect {
