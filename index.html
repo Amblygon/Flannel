@@ -15,11 +15,20 @@ title: Flannel
       <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
    </ul>
-   {% for page in site.solutions %}
-      <a href="">{{ page.categories }}</a></li>
-   {% endfor %}
-   </div>
-<script>
+  
+  {% assign categories_array = "" | split:"|" %}
+  {% for page in site.solutions %}
+      {% for categories in page.categories %}
+          {% assign categories_array = categories_array | push: categories | uniq %}
+      {% endfor %}
+  {% endfor %}
+  {% for categories in categories_array %}
+    {{ categories }}
+  {% endfor %}
+  
+  </div>
+
+  <script>
   function gotoprblink(a) {
     var slen = a.length;
     var qid = a.charAt(a.length - 1);
