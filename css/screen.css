@@ -295,6 +295,10 @@ ul.posts {
   list-style: none;
 }
 
+.front-listing-sect {
+  margin: 10px 0;
+}
+
 @media screen and (min-width: 480px) {
   .front-listing-sect ul {
     columns: 2;
