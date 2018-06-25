@@ -1,0 +1,62 @@
+---
+layout: post
+permalink: /codeforces/problemset/problem/992/A/
+clink: /problemset/problem/992/A/
+title: 991A. If at first you don't succeed...
+pcode: 991A
+qname: If at first you don't succeed...
+author: Aswanth
+oj: codeforces.com
+categories: implementation
+---
+
+{{ page.title }}
+================
+
+<span class="tag-boxed">Implementation</span>
+
+Each student eagerly awaits the day he would pass the exams successfully. Thus, Vasya was ready to celebrate, but, alas, he didn't pass it. However, many of Vasya's fellow students from the same group were more successful and celebrated after the exam.
+
+Some of them celebrated in the BugDonalds restaurant, some of them — in the BeaverKing restaurant, the most successful ones were fast enough to celebrate in both of restaurants. Students which didn't pass the exam didn't celebrate in any of those restaurants and elected to stay home to prepare for their reexamination. However, this quickly bored Vasya and he started checking celebration photos on the Kilogramm. He found out that, in total, BugDonalds was visited by A students, BeaverKing — by B students and C students visited both restaurants. Vasya also knows that there are N students in his group.
+
+Based on this info, Vasya wants to determine either if his data contradicts itself or, if it doesn't, how many students in his group didn't pass the exam. Can you help him so he won't waste his valuable preparation time?
+
+Read the question with I/O specifications at [codeforces.com](https://codeforces.com{{ page.clink }}).
+
+Hints
+-----
+
+*1. How many students passed?* 
+*2. How many students failed?*
+*3. How can the data be contradicting?*
+
+
+Solution
+--------
+
+There are $$N$$ students of which, $$A$$ passed students celebrate at BugDonalds, $$B$$ passed students celebrate at BeaverKing, $$C’ passed students will go to both the places for celebration. So the total number of students who passed is ‘Pass = A+B-C’ since $$C$$ students visit both the places. From this information, number of failed students is $$Fail = N - Pass$$. 
+
+How can the given data be contradicting? 
+
+We know that Vasya failed, so number of passed students cannot be equal to or more than $$N$$. $$C$$ cannot be greater than $$A$$ or $$B$$, since $$C$$ is the number of students celebrating at both places and hence it can’t exceed the number at individual places. 
+
+Hence, if the given data doesn’t fall in the above 2 contradicting conditions print **‘Fail’** as answer else print **‘-1’**.
+
+Code
+----
+
+{% highlight c++ %}
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a ,b ,c ,n;
+    cin >> a >> b >> c>> n;
+    int pass = a + b - c, fail = n - pass;
+    if( pass >= n || c > a || c > b ) //Checking for contradiction
+        return cout << -1 << endl , 0;
+    cout << fail << endl;
+}
+{% endhighlight %}
+
+*Written by {{ page.author }}*
