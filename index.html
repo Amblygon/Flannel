@@ -9,8 +9,6 @@ title: Flannel
     <input type="text" placeholder="Codeforces Problem Code (eg.736B)." id="pcode">
     <button onclick="gotoprblink(document.getElementById('pcode').value)" id="pclick">Go</button>
   </div>
-  <span>We are adding new editorials daily. Please find our current editorial listing below.</span>
-  
   {% assign categories_array = "" | split:"|" %}
   {% for page in site.solutions %}
       {% for categories in page.categories %}
