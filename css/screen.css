@@ -98,7 +98,7 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  max-width: 42em;
+  max-width: 55em;
   padding: 0 1.2em;
   margin: 1em auto 2em auto;
 }
@@ -216,7 +216,7 @@ ul.posts {
 
   #post pre {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #efefef;
     padding: 0 .4em;
     overflow: auto;
   }
@@ -228,7 +228,6 @@ ul.posts {
 
   #post code {
     border: 1px solid #ddd;
-    background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
   }
