@@ -168,7 +168,6 @@ ul.posts {
 
 /* Hints */
 
- /* Style the buttons that are used to open and close the accordion panel */
 .hint-button {
   cursor: pointer;
   transition: 0.4s;
@@ -179,8 +178,6 @@ ul.posts {
 }
 
 .hint-content {
-  padding: 0 18px;
-  background-color: white;
   display: none;
   overflow: hidden;
 }
