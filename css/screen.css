@@ -166,6 +166,25 @@ ul.posts {
         border: 0;
       }
 
+/* Hints */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.hint-button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active, .hint-button:hover {
+  border-bottom: 1px solid;
+}
+
+.hint-content {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 /*****************************************************************************/
 
 /* OnToProblem
